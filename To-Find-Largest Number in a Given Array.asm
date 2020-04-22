@@ -15,5 +15,8 @@ AGAIN:                      CMP AL, [SI+1]
 NEXT:                       INC SI
                             DEC CL
                             JNZ AGAIN
+                            MOV SI, OFFSET LARGEST
+                            MOV [SI], AL
+                            
                             
                             
