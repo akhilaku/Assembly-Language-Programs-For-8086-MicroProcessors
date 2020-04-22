@@ -17,6 +17,10 @@ NEXT:                       INC SI
                             JNZ AGAIN
                             MOV SI, OFFSET LARGEST
                             MOV [SI], AL
+                            MOV AH, 4CH
+                            INT 21H
+                            CODE ENDS
+                            END START
                             
                             
                             
