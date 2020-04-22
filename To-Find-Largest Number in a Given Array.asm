@@ -20,7 +20,7 @@ NEXT:                       INC SI
                             MOV AH, 4CH
                             INT 21H
                             CODE ENDS
-                            END START
+                            END START                ;end of the code
                             
                             
                             
