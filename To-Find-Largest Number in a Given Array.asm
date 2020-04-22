@@ -9,4 +9,8 @@ START:                      MOV AX, DATA
                             MOV SI, OFFSET LIST
                             MOV CL, COUNT
                             MOV AL, [SI]
+AGAIN:                      CMP AL, [SI+1]
+                            JNL NEXT
+                            MOV AL, [SI+1]
+                            
                             
