@@ -12,5 +12,8 @@ START:                      MOV AX, DATA
 AGAIN:                      CMP AL, [SI+1]
                             JNL NEXT
                             MOV AL, [SI+1]
+NEXT:                       INC SI
+                            DEC CL
+                            JNZ AGAIN
                             
                             
