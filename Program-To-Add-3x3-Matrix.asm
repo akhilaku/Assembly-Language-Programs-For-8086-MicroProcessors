@@ -19,7 +19,7 @@ NEXT:                XOR AX, AX
 					 INC SI
 					 INC DI
 					 ADD BX,02
-					 LOOP NEXT
+					 LOOP NEXT                                    ; looping
 					 MOV AH, 4CH
 					 INT 21H
 					 CODE ENDS
