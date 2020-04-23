@@ -14,7 +14,7 @@ START:               MOV AX, DATA
 					 MOV BX, OFFSET RMAT3
 NEXT:                XOR AX, AX
                      MOV AL,[SI]
-					 ADD AL,[DI]
+					 ADD AL,[DI]                                  ; adding
 					 MOV WORD PTR [BX],AX
 					 INC SI
 					 INC DI
