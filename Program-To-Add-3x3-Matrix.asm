@@ -23,5 +23,5 @@ NEXT:                XOR AX, AX
 					 MOV AH, 4CH
 					 INT 21H
 					 CODE ENDS                                    ; stoping the coding part
-					 END START
+					 END START                                    ; end 
 					 
