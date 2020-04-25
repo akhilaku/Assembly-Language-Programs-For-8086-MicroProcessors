@@ -11,4 +11,4 @@ DIV BL                ; Divide AX by BL to find the number of tens in the binary
 MOV CL, 04            ; Has the remainder, which is the number of ones in the binary number.
 ROR AL, CL            ; rotate AL content right four times to make the lower nibble as uuper nibble.
 
-                       
+OR AL, AH             ; Perform OR operation on AL and AH to concatenate the number of tens and ones
