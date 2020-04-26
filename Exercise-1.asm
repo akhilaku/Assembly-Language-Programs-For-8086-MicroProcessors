@@ -1,4 +1,4 @@
-; Write a program to convert the 8 bit binary number FFH into a BCD
+; Write a program to convert the 8 bit binary number FFH into a BCD number. 
 
 MOV AX, 00FFH         ; move the data FFH to AX, with the upper bytes as 00h.
 MOV BL, 100           ; store the decimal value 100 (or 64H ) in BL.
