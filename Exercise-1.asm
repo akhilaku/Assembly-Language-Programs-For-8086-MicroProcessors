@@ -1,4 +1,5 @@
 ; Write a program to convert the 8 bit binary number FFH into a BCD number. The result is to be stored at memory locations 3000H:200H
+and 300H:2001H.
 
 
 MOV AX, 00FFH         ; move the data FFH to AX, with the upper bytes as 00h.
