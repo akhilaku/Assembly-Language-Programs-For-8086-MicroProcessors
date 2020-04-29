@@ -8,4 +8,7 @@ MOV BL, AL                            ; save a copy of AL in BL.
 AND AL, 0F0H                          ; mask the lower nibble in AL.
 MOV CL, 04
 ROR AL, CL                            ; Rotate AL right four times, to get the upper nibble.
+CALL ASCII                            ; call the subroutine ASCII.
+MOV[1000H], AL                        ; store the result in AL in the memory.
+
 
