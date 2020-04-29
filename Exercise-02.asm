@@ -7,4 +7,5 @@ MOV AL, [5000H]                       ; move the binary data to AL.
 MOV BL, AL                            ; save a copy of AL in BL.
 AND AL, 0F0H                          ; mask the lower nibble in AL.
 MOV CL, 04
+ROR AL, CL                            ; Rotate AL right four times, to get the upper nibble.
 
