@@ -9,7 +9,7 @@ CODE SEGMENT
 START:               MOV AX, DATA
                      MOV DS, AX
 					 MOV CX, DIM                                  ; dimensions 
-					 MOV SI, OFFSET MAT1
+					 MOV SI, OFFSET MAT1                          ; mebstioning the offset
 					 MOV DI, OFFSET MAT2
 					 MOV BX, OFFSET RMAT3
 NEXT:                XOR AX, AX
