@@ -18,7 +18,7 @@ NEXT:                XOR AX, AX
 					 MOV WORD PTR [BX],AX
 					 INC SI
 					 INC DI
-					 ADD BX,02
+					 ADD BX,02                                    ; adding elements in matrix
 					 LOOP NEXT                                    ; looping
 					 MOV AH, 4CH
 					 INT 21H
