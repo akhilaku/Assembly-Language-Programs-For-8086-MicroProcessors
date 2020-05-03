@@ -9,7 +9,7 @@ DATA ENDS
 CODE SEGMENTS
 START:             MOV AX, DATA
                    MOV DS, AX
-				   MOV ES, AX
+				   MOV ES, AX                                          ; moving AX into ES.
 				   MOV CX, STRLEN1
 				   ADD CX, -2
 				   LEA SI, STR1
