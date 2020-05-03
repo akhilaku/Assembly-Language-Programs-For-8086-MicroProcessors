@@ -10,7 +10,7 @@ CODE SEGMENTS
 START:             MOV AX, DATA
                    MOV DS, AX
 				   MOV ES, AX                                          ; moving AX into ES.
-				   MOV CX, STRLEN1
+				   MOV CX, STRLEN1                                     ; mesuring the length of the string.
 				   ADD CX, -2
 				   LEA SI, STR1
 				   LEA DI, STRREV
