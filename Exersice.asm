@@ -15,5 +15,11 @@ MAIN:      MOV TMOD,#20H              ; COM2 uses Timer 1 on reset
 AGAIN:     MOV A,#"A"                 ; start timer 1
            ACALL SENDCOM2             ; send char 'A'
            SJMP AGAIN
+SENDCOM2:  MOV SBUF1, A               ; COM2 has its own SBUF
+HERE:      JNB TI1,HERE               ; COM2 has its own TI flag
+           CLR TI1
+           RET
+           END
+           
            
      
