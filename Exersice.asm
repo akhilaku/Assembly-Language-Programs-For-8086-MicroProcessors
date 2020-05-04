@@ -12,4 +12,8 @@
 MAIN:      MOV TMOD,#20H              ; COM2 uses Timer 1 on reset
            MOV TH1,#-6                ; 4800 baud rate
            MOV SCON1,#50H             ; 8-bit, 1 stop, REN enabled
+AGAIN:     MOV A,#"A"                 ; start timer 1
+           ACALL SENDCOM2             ; send char 'A'
+           SJMP AGAIN
+           
      
