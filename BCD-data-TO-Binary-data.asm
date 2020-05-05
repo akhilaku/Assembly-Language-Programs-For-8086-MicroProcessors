@@ -20,7 +20,7 @@ CONTINUE: CMP BX, 0             ; comparison to check BCD num is zero
 		  MOV BH, AL            ; result back in BH register
 		  INC CX                ; increment CX by 1
 		  JMP CONTINUE
-ENDPROG:  MOV BIN_NUM, CX       
+ENDPROG:  MOV BIN_NUM, CX       ; result is stored in data segment
           MOV AH, 4CH           ; termination of program
           INT 21H               ; termination of program
           CODE ENDS
