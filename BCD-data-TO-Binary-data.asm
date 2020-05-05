@@ -4,7 +4,7 @@ ASSUME    CS:CODE, DS:DATA
 	      BIN_NUM DW
 	      DATA ENDS
 	      CODE SEGMENTS
-START:    MOV AX, DATA          ; initializing data segment
+START:    MOV AX, DATA          
           MOV DS, AX
 	      MOV BX, BCD_NUM       ; BX is now having BCD number
 	      MOV CX, 0             ; initialization
