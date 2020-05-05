@@ -6,7 +6,7 @@ ASSUME    CS:CODE, DS:DATA
 	      CODE SEGMENTS
 START:    MOV AX, DATA                    
           MOV DS, AX
-	      MOV BX, BCD_NUM       
+	      MOV BX, BCD_NUM       ; BX is now having BCD number
 	      MOV CX, 0             ; initialization
 CONTINUE: CMP BX, 0             ; comparison to check BCD num is zero
           JZ ENDPROG            ; if zero end the program 
@@ -20,7 +20,7 @@ CONTINUE: CMP BX, 0             ; comparison to check BCD num is zero
 		  MOV BH, AL            ; result back in BH register
 		  INC CX                ; increment CX by 1
 		  JMP CONTINUE
-ENDPROG:  MOV BIN_NUM, CX       ; result is stored in data segment
+ENDPROG:  MOV BIN_NUM, CX       
           MOV AH, 4CH           ; termination of program
           INT 21H               ; termination of program
           CODE ENDS
