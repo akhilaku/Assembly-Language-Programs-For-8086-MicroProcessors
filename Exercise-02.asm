@@ -3,7 +3,7 @@
 
 MOV AX, 2000H
 MOV DS, AX                            ; initilaize DS with 2000h
-MOV AL, [5000H]                       ; move the binary data to AL.
+MOV AL, [5000H]                       ; 
 MOV BL, AL                            ; save a copy of AL in BL.
 AND AL, 0F0H                          ; mask the lower nibble in AL.
 MOV CL, 04
