@@ -4,6 +4,5 @@
 **Let help the Beginners to learn and develop their knowledge in the field of Assembly Language Programming.**
 
 <p align="center">
-<img scr=https://github.com/akhilaku/Assembly-Language-Programs-For-8086-MicroProcessors/blob/master/8086-Programming1%20-%20Copy.png>
-<kbd>
+<kbd><img scr=https://github.com/akhilaku/Assembly-Language-Programs-For-8086-MicroProcessors/blob/master/8086-Programming1%20-%20Copy.png></kbd>
   </p>
