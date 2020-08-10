@@ -11,7 +11,7 @@ MOV AH, 00            ; Clear AH.
 MOV BL, 10            ; Store the decimal value 10( or 0AH) in BL.
 DIV BL                ; Divide AX by BL to find the number of tens in the binary number AH.
                      
-MOV CL, 04            ; Has the remainder, which is the number of ones in the binary number.
+MOV CL, 04            ; Has the remainder, which is the number of ones in the binary number are moved.
 ROR AL, CL            ; rotate AL content right four times to make the lower nibble as uuper nibble.
 
 OR AL, AH             ; Perform OR operation on AL and AH to concatenate the number of tens and ones
